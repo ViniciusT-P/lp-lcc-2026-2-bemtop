@@ -15,10 +15,7 @@ public class Jogo {
         this.numGolsTime2 = numGolsTime2;
     }
     public Jogo (){
-        this.nomeTime1 = "";
-        this.nomeTime2 = "";
-        this.numGolsTime1 = 0;
-        this.numGolsTime2 = 0;
+        this("","",0,0);
     }
 
     public String getNomeTime1(){
@@ -43,6 +40,34 @@ public class Jogo {
 
 
 
-    public void setNomeTime2(String nomeTime2){
+    public void setNomeTime2(String nomeTime2) {
         this.nomeTime2 = nomeTime2;
+    }
+
+
+    public int getNumGolsTime1(){
+        return this.numGolsTime1;
+    }
+
+
+    public int getNumGolsTime2(){
+        return this.numGolsTime2;
+    }
+
+
+    public void setNumGolsTime1(int numGolsTime1){
+        this.numGolsTime1 = numGolsTime1;
+
+    }
+
+
+
+    public void setNumGolsTime2(int numGolsTime2) {
+        this.numGolsTime2 = numGolsTime2;
+    }
+
+    public String toString(){
+        return "Jogo entre "+ this.nomeTime1 + " e " + this.nomeTime2 + " Cujo placar deste jogo foi : " + this.numGolsTime1 + " x " +this.numGolsTime2;
+
+    }
 }
